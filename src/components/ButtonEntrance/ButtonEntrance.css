@@ -1,0 +1,26 @@
+.button-entry {
+  padding: 5px 12px;
+  margin-left: 30px;
+
+  color: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+
+  background-color: rgb(61, 220, 132);
+
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 1.5s, linear, 0.6s;
+}
+
+.button-entry:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .button-entry {
+    margin-left: 14px;
+  }
+}

@@ -1,0 +1,32 @@
+.button-profile {
+  position: relative;
+
+  padding-right: 43px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+
+  text-decoration: none;
+  transition: opacity 1.5s, linear, 0.6s;
+}
+
+.button-profile:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.button-profile__icon {
+  position: absolute;
+  right: 0;
+  top: -5px;
+
+  width: 11.5px;
+  height: 14px;
+  padding: 8px 7.25px;
+
+  background-color: rgb(49, 49, 49);
+
+  border-radius: 4px;
+}
