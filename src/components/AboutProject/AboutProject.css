@@ -1,0 +1,157 @@
+.project {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.project__list {
+  width: 89.06%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 110px;
+  display: flex;
+
+  list-style: none;
+}
+
+.project__item {
+  flex-basis: 550px;
+}
+
+.project__subtitle {
+  margin-top: 0;
+  margin-bottom: 26px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.04em;
+}
+
+.project__paragraph {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table {
+  display: flex;
+  width: 89.06%;
+  margin: 0 auto;
+}
+
+.table__cell {
+  text-align: center;
+}
+
+.table__cell_position_left {
+  width: 20%;
+}
+
+.table__cell_position_right {
+  width: 80%;
+}
+
+.table__heading {
+  padding: 9px 0;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.table__heading_color_black {
+  color: rgb(0, 0, 0);
+  background-color: rgb(31, 220, 132);
+}
+
+.table__heading_color_white {
+  background-color: rgb(48, 48, 48);
+}
+
+.table__text {
+  color: rgb(139, 139, 139);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 790px) {
+  .project {
+    padding: 90px 0;
+  }
+  .project-list {
+    margin-bottom: 93px;
+  }
+
+  .project__item {
+    flex-basis: 319px;
+  }
+
+  .project__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .project__subtitle {
+    margin-bottom: 22px;
+  }
+
+  .project__paragraph {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .project {
+    padding: 70px 0;
+  }
+  .project__list {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    width: 88.7%;
+  }
+
+  .project__item {
+    flex-basis: 0;
+    margin-bottom: 58px;
+  }
+
+  .project__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .table {
+    width: 88.7%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .project__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .project__paragraph {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .table__cell_position_left {
+    width: 35.2%;
+  }
+
+  .table__cell_position_right {
+    width: 64.8%;
+  }
+
+  .table__heading {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .table__text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

@@ -1,0 +1,24 @@
+.button-line {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 80px;
+
+  font-size: 12px;
+  line-height: 14.5px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(47, 47, 47);
+
+  border: none;
+  border-radius: 6px;
+  transition: all 1s, linear, 0.8s;
+}
+
+.button-line:hover {
+  color: rgb(0, 0, 0);
+
+  opacity: 0.6;
+  background-color: rgb(43, 224, 128);
+  cursor: pointer;
+}

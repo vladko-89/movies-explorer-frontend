@@ -1,0 +1,132 @@
+.card {
+  max-width: 270px;
+  min-height: 218px;
+  max-height: 218px;
+
+  background-color: rgb(34, 34, 34);
+
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.card__image {
+  margin-bottom: 14px;
+  width: 100%;
+  height: 151px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  margin: 0;
+  padding-right: 10px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15.7px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+
+  background-color: rgb(49, 49, 49);
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.09);
+  box-sizing: content-box;
+  transition: all 1s, linear, 0.7s;
+}
+
+.card__button:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.card__button_active {
+  background-color: rgb(43, 224, 128);
+}
+
+.card__delete {
+  position: relative;
+
+  background-color: inherit;
+
+  border: none;
+  transition: transform 1.5s, linear, 0.5s;
+}
+
+.card__delete::before,
+.card__delete::after {
+  content: "";
+  position: absolute;
+
+  width: 8px;
+  height: 1px;
+
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.card__delete:hover {
+  transform: rotate(360deg);
+  opacity: 0.6;
+}
+
+.card__delete::after {
+  transform: rotate(-45deg);
+}
+
+.card__text {
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+
+  font-size: 11px;
+  line-height: 13px;
+  color: rgb(139, 139, 139);
+}
+
+@media screen and (max-width: 1140px) {
+  .card {
+    max-width: 320px;
+    min-height: 257px;
+    max-height: 257px;
+  }
+
+  .card__image {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .card {
+    max-width: 339px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 339px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    width: 300px;
+  }
+}
