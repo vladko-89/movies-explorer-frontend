@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Ссылка_на_проект](https://vladuhanov.nomoredomains.icu/movies-explorer/movies)
 
 ## Комментарии к работе: Этап JS
 
