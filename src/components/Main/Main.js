@@ -5,13 +5,16 @@ import AboutProject from '../AboutProject/AboutProject';
 import Tech from '../Tech/Tech';
 import AboutMe from '../AboutMe/AboutMe';
 import Portfolio from '../Portfolio/Portfolio';
+import {anchorScroll} from '../../utils/utils';
 import './Main.css';
 
-function Main(props) {
+function Main() {
+
+
   return (
     <main className="main">
       <Promo />
-      <NavTab onScroll={props.onScroll} />
+      <NavTab onScroll={anchorScroll} />
       <AboutProject />
       <Tech />
       <AboutMe />

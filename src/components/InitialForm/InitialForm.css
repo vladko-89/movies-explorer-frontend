@@ -71,16 +71,30 @@
 
 .initial-form__error {
   margin-bottom: 6px;
+  height: 24PX;
 
   color: rgba(238, 52, 101, 1);
   font-size: 10px;
   line-height: 12px;
 
-  opacity: 0;
+  opacity: 1;
 }
 
 .initial-form__error_active {
   opacity: 1;
+}
+
+.initial-form__response-error {
+  display: block;
+  margin-bottom: 10px;
+  height: 32px;
+
+  color: rgba(238, 52, 101, 1);
+  font-size: 14px;
+  line-height: 18px;
+
+  opacity: 1;
+  text-align: center;
 }
 
 .initial-form__button {
@@ -98,6 +112,13 @@
   border: none;
   border-radius: 3px;
   transition: all 1s, linear, 0.6s;
+}
+
+.initial-form__button_disabled,
+.initial-form__button_disabled:hover {
+  color: rgb(194, 194, 194);
+  background-color: rgb(248, 248, 248);
+  pointer-events: none;
 }
 
 .initial-form__button:hover {

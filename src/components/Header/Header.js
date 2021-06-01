@@ -9,8 +9,8 @@ function Header(props) {
   return (
     <header className="header">
       <Logo />
-      <Navigation />
-      <Route exact path="/(movies|saved-movies|profile)" >
+      <Navigation loggedIn={props.loggedIn} />
+      <Route exact path="(/|/movies|/saved-movies|/profile)" >
         <div onClick={props.onBurgerMenu} className="header__burger-button"></div>
       </Route>
     </header>
