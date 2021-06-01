@@ -1,4 +1,4 @@
-import { MOVIES_URL } from './data';
+import { MOVIES_URL } from './constants';
 import { getResponse } from './utils';
 
 

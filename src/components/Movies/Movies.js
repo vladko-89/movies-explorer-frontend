@@ -1,35 +1,46 @@
 import React from 'react';
 import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
-import moviesApi from '../../utils/MoviesApi';
+
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import ButtonNewLine from '../ButtonNewLine/ButtonNewLine';
 import './Movies.css';
 
-function Movies() {
+function Movies(props) {
 
-  const [cards, setCards] = React.useState([]);
-  const [filterCards, setFilterCards] = React.useState([]);
+  React.useEffect(() => {
+    props.resetNothingShow();
+    props.onChangeSavedSearchInput("");
+  }, [])
 
-  const [load, setLoad] = React.useState(false);
+  
 
-  function LoadMovie() {
-    moviesApi.getMovies()
-      .then((res) => {
-        setCards(res);
-      });
+  function handleClickButtonMore() {
+    props.onRenderMovies(props.filteredCards, props.showedCards, props.countCards.more);
   }
-
-
-  function filterMovie() { }
 
   return (
     <section className="movies">
-      <SearchForm onLoad={LoadMovie} />
-      { load ? <Preloader /> :
+      <SearchForm
+        loadedCards={props.loadedCards}
+        onLoad={props.onLoad}
+        onFilter={props.onFilter}
+        check={props.check}
+        onCheck={props.onCheck}
+        onChangeSearchInput={props.onChangeSearchInput}
+      />
+      { props.isLoad ? <Preloader /> :
         <>
-          <MoviesCardList cards={cards} />
-          <ButtonNewLine />
+          <MoviesCardList 
+            loadedCards={props.loadedCards}
+            showedCards={props.showedCards}
+            savedCards={props.savedCards}
+            onSave={props.onSave}
+            onDelete={props.onDelete}
+            check={props.check}
+            nothingShow={props.nothingShow}
+          />
+          {props.filteredCards.length > 0 && props.showedCards.length > 0 && !props.check &&  !props.nothingShow && <ButtonNewLine handleClick={handleClickButtonMore} />}
         </>
       }
     </section>

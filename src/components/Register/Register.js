@@ -14,6 +14,9 @@ function Register(props) {
         link="Войти"
         path="/signin"
         history={props.history}
+        signUp={props.signUp}
+        responseError={props.responseError}
+        resetResponseError={props.resetResponseError}
       />
     </div>
   );

@@ -11,27 +11,27 @@ function BurgerMenu(props) {
           <li className="burger__item">
             <Link to='/'
               className="burger__link"
-              onClick={props.isClose}>
+              onClick={props.onClose}>
               Главная
               </Link>
           </li>
           <li className="burger__item">
             <Link to='/movies'
-              onClick={props.isClose} className="burger__link">
+              onClick={props.onClose} className="burger__link">
               Фильмы
             </Link>
           </li>
           <li className="burger__item">
             <Link to='/saved-movies'
-              onClick={props.isClose}
+              onClick={props.onClose}
               className="burger__link">
               Сохраненные фильмы
             </Link>
           </li>
         </ul>
-        <ButtonAccount />
+        <ButtonAccount onClick={props.onClose} />
       </div>
-      <button type="button" onClick={props.isClose} className="burger__button-close" />
+      <button type="button" onClick={props.onClose} className="burger__button-close" />
     </div>
   );
 }

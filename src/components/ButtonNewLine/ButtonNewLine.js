@@ -1,9 +1,12 @@
 import React from 'react';
 import './ButtonNewLine.css';
 
-function ButtonNewLine() {
+function ButtonNewLine(props) {
   return (
-    <button className="button-line">Ещё</button>
+    <button className="button-line"
+      onClick={props.handleClick}
+    >
+      Ещё</button>
   );
 }
 
