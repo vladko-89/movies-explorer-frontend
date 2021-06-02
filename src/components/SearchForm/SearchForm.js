@@ -7,17 +7,35 @@ function SearchForm(props) {
 
   const [searchInput, setSearchInput] = React.useState('');
 
+
   function handleChangeSearch(e) {
     setSearchInput(e.target.value);
+    if (props.onChangeSearchInput) {
+      props.onChangeSearchInput(e.target.value);
+    }
+    
+    if (props.onChangeSavedSearchInput) {
+      props.onChangeSavedSearchInput(e.target.value);
+    }
+    
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e, string) {
     e.preventDefault();
-
-    props.onLoad();
+    if (props.onLoad) {
+      if (props.loadedCards.length === 0) {
+        props.onLoad(string);
+      } else {
+        props.onFilter(props.loadedCards, string);
+      }
+    } else {
+      props.onFilterSaved(props.savedCards, string)
+    }
+    
   }
+
   return (
-    <form className="form-search" onSubmit={handleSubmit}>
+    <form className="form-search" onSubmit={(e) => { handleSubmit(e, searchInput) }}>
       <div className="form-search__flex-container">
         <input type="text"
           value={searchInput}
@@ -30,7 +48,11 @@ function SearchForm(props) {
           <img className="form-search__icon" src={search} alt="Иконка поиска"></img>
         </button>
       </div>
-      <FilterCheckbox text="Короткометражки" />
+      <FilterCheckbox
+        text="Короткометражки"
+        onCheck={props.onCheck}
+        check={props.check}
+      />
     </form>
   )
 }

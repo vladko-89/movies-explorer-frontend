@@ -4,19 +4,37 @@ import Preloader from '../Preloader/Preloader';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import './SavedMovies.css';
 
-function SavedMovies() {
+function SavedMovies(props) {
 
-  const [load, setLoad] = React.useState(false);
+  React.useEffect(() => {
+   // props.changePath('/saved-movies')
+    props.resetFilter();
+    props.resetNothingShow();
+    props.onChangeSavedSearchInput("");
+    
 
-  function LoadMovie() {
-    setTimeout(setLoad(!load), 2000);
-  }
+  }, [])
+
 
   return (
     <section className="movies">
-      <SearchForm onLoad={LoadMovie} />
-      { load ? <Preloader /> :
-        <MoviesCardList />
+      <SearchForm
+      onFilter={props.onFilter}
+      onFilterSaved={props.onFilterSaved}
+      check={props.check}
+      onCheck={props.onCheck}
+      onChangeSavedSearchInput={props.onChangeSavedSearchInput}
+      savedCards={props.savedCards}
+    />
+      { props.isLoad ? <Preloader /> :
+        <MoviesCardList
+        showedCards={props.showedCards}
+        savedCards={props.savedCards}
+        filteredSavedCards={props.filteredSavedCards}
+        onDelete={props.onDelete}
+        check={props.check}
+        nothingShow={props.nothingShow}
+      />
       }
     </section>
   );

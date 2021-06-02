@@ -9,6 +9,25 @@
   list-style: none;
 }
 
+.movies-list__item {
+  overflow: hidden;
+}
+
+.movie-list__item_hidden {
+  display: none;
+}
+
+.movies-list__paragraph {
+  margin: 0;
+  padding: 0;
+  color: rgb(255,255,255);
+  font-size: 30px;
+  line-height: 36px;
+  align-items: center;
+
+  text-align: center;
+}
+
 @media screen and (max-width: 1140px) {
   .movies-list {
     grid-template-columns: repeat(3, 1fr);
