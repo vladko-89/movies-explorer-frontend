@@ -10,6 +10,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * PageNotFound - Обратная ссылка срабатывает только после второго клика
 
+![image](https://user-images.githubusercontent.com/63239096/120971189-68525e00-c77d-11eb-9c59-75e7faf563d2.png)
+
+
 ## Этап верстки
 ### Главная:
 
