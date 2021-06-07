@@ -27,17 +27,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![image](https://user-images.githubusercontent.com/63239096/120971825-270e7e00-c77e-11eb-99b2-1bcc7a4af34a.png)
 
 Данные валидны и отличаются от первоначальных
+
 ![image](https://user-images.githubusercontent.com/63239096/120971925-42798900-c77e-11eb-9264-7a692c24ef75.png)
 
 Форма регистрации
+
 ![image](https://user-images.githubusercontent.com/63239096/120972041-5f15c100-c77e-11eb-8901-955a23dd8d1e.png)
+
 Данные не валидны
+
 ![image](https://user-images.githubusercontent.com/63239096/120972114-72c12780-c77e-11eb-8385-cffb57ef62cf.png)
 
 Данные валидны
+
 ![image](https://user-images.githubusercontent.com/63239096/120972164-82407080-c77e-11eb-9ba1-75840334067c.png)
 
  Обработка ошибки при запросе от Api
+ 
  ![image](https://user-images.githubusercontent.com/63239096/120972270-a0a66c00-c77e-11eb-83ae-0683090bb9a9.png)
 
 
