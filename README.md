@@ -4,13 +4,43 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Ссылка_на_проект](https://vladuhanov.nomoredomains.icu/movies-explorer/movies)
 
+
+
 ## Комментарии к работе: Этап JS
 
 * Profile. Кнопка "Редактировать" при загрузке компонента не активна. Форма сразу доступна для изменения данных. При изменении данных кнопка меняет стили, и подменяется на кнопку Сохранить. Если данные не валидны - снова меняется на недоступную.
 
 * PageNotFound - Обратная ссылка срабатывает только после второго клика
 
+Поиск на /movies
 ![image](https://user-images.githubusercontent.com/63239096/120971189-68525e00-c77d-11eb-9c59-75e7faf563d2.png)
+Фильтр
+![image](https://user-images.githubusercontent.com/63239096/120971416-a64f8200-c77d-11eb-8530-51e931342921.png)
+Кнопка Еще
+![image](https://user-images.githubusercontent.com/63239096/120971356-9637a280-c77d-11eb-9719-53ee55870fb3.png)
+
+Сохранение фильма
+![image](https://user-images.githubusercontent.com/63239096/120971500-be270600-c77d-11eb-8c5f-fe384228815f.png)
+
+Сохраненные фильмы на роуте /saved-movies
+
+Форма профиля. /profile Не валидные данные
+![image](https://user-images.githubusercontent.com/63239096/120971825-270e7e00-c77e-11eb-99b2-1bcc7a4af34a.png)
+
+Данные валидны и отличаются от первоначальных
+![image](https://user-images.githubusercontent.com/63239096/120971925-42798900-c77e-11eb-9264-7a692c24ef75.png)
+
+Форма регистрации
+![image](https://user-images.githubusercontent.com/63239096/120972041-5f15c100-c77e-11eb-8901-955a23dd8d1e.png)
+Данные не валидны
+![image](https://user-images.githubusercontent.com/63239096/120972114-72c12780-c77e-11eb-8385-cffb57ef62cf.png)
+Данные валидны
+![image](https://user-images.githubusercontent.com/63239096/120972164-82407080-c77e-11eb-9ba1-75840334067c.png)
+ Обработка ошибки при запросе от Api
+ ![image](https://user-images.githubusercontent.com/63239096/120972270-a0a66c00-c77e-11eb-83ae-0683090bb9a9.png)
+
+
+
 
 
 ## Этап верстки
