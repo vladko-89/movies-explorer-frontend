@@ -10,7 +10,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Profile. Кнопка "Редактировать" при загрузке компонента не активна. Форма сразу доступна для изменения данных. При изменении данных кнопка меняет стили, и подменяется на кнопку Сохранить. Если данные не валидны - снова меняется на недоступную.
 
-* PageNotFound - Обратная ссылка срабатывает только после второго клика
 
 Поиск на /movies
 ![image](https://user-images.githubusercontent.com/63239096/120971189-68525e00-c77d-11eb-9c59-75e7faf563d2.png)
@@ -34,8 +33,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![image](https://user-images.githubusercontent.com/63239096/120972041-5f15c100-c77e-11eb-8901-955a23dd8d1e.png)
 Данные не валидны
 ![image](https://user-images.githubusercontent.com/63239096/120972114-72c12780-c77e-11eb-8385-cffb57ef62cf.png)
+
 Данные валидны
 ![image](https://user-images.githubusercontent.com/63239096/120972164-82407080-c77e-11eb-9ba1-75840334067c.png)
+
  Обработка ошибки при запросе от Api
  ![image](https://user-images.githubusercontent.com/63239096/120972270-a0a66c00-c77e-11eb-83ae-0683090bb9a9.png)
 
